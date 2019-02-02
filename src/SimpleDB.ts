@@ -1,4 +1,4 @@
-import fs, { read } from 'fs';
+import fs from 'fs';
 import readline from 'readline';
 import path from 'path';
 
@@ -25,7 +25,7 @@ export default class SimpleDB {
     }
 
     public createHashMap() {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
             this.readFile((dbOject, lineNumber) => {
                 this.hashMap[dbOject.key] = lineNumber;
             }, 0, "FileEnd", (endLine) => {
