@@ -18,7 +18,7 @@ These include arrays, nested objects and primitive data types, such as numbers, 
 - Ensure NodeJS is installed and working on system
 - Ensure TypeScript is globally installed through npm: `npm i -g typescript`
 - Open 1 terminal in root directory of the project, then run `tsc -w` (Leave it open the whole time)
-- Open another terminal and run the command: `npm start`
+- Open another terminal, first run `npm i`, and then run the command: `npm start` 
 
 ### Usage
 
